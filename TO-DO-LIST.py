@@ -62,7 +62,7 @@ def load_tasks():
                 task_text, completed = line.strip().split("|")
                 tasks.append({"tasks": task_text, "completed": completed == "True"})
     except FileNotFoundError:
-        pass  # no file yet = start fresh
+        pass  
     return tasks
 
 
@@ -91,3 +91,4 @@ def main():
 
 
 main()
+
